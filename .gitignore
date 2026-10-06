@@ -218,3 +218,11 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+
+# --- Data Science school project ---
+# Course materials and datasets we are not using
+Moodle/
+unused_datasets/
+
+# PyCharm settings
+.idea/

@@ -10,7 +10,7 @@ The talk is about 7-8 minutes, so around 9 slides (about 1 minute each) could wo
 |---|---|---|---|
 | 1 | Title | | |
 | 2 | Dataset | Adult Income, 1994 US census. 48,842 people (adult.data 32,561 + adult.test 16,281), 15 variables (6 numerical, 9 categorical). Target: income >50K. We kept the original train/test split. 24.9% of people in train earn more than 50K. | |
-| 3 | Preprocessing | see the list below | |
+| 3 | Preprocessing | see the list below | `03i` and/or `03k` (why the boxplots look strange) |
 | 4 | What is related to income | correlations with income | one of `03a`, `03b`, `03e` |
 | 5 | Hypothesis tests | table of the tests | |
 | 6 | Regression | linear: equation and R²; logistic: test results | `05b` and/or `05c` |
@@ -107,6 +107,12 @@ About `03a` (marital status): the top bar, Married-AF-spouse, is only 21 people.
 | `03c_eda_income_by_sex.png` | correlations slide |
 | `03d_eda_income_by_age_group.png` | correlations slide |
 | `03e_eda_correlation_with_income.png` | correlations slide |
+| `03f_boxplot_age.png` | preprocessing slide (a normal-looking boxplot, for comparison) |
+| `03g_boxplot_fnlwgt.png` | preprocessing slide (long tail to the right) |
+| `03h_boxplot_education-num.png` | preprocessing slide (a few low outliers) |
+| `03i_boxplot_capital-gain.png` | preprocessing slide (91.6% are 0, so there is no box, only a line at 0, and every non-zero value is an outlier dot) |
+| `03j_boxplot_capital-loss.png` | preprocessing slide (the same effect, 95.3% are 0) |
+| `03k_boxplot_hours-per-week.png` | preprocessing slide (47.2% work exactly 40 h, so the box is only 40-45 h and IQR marks 26% as outliers) |
 | `05a_linear_actual_vs_predicted.png` | regression slide |
 | `05b_logistic_confusion_matrix.png` | regression slide |
 | `05c_logistic_roc_curve.png` | regression slide |
